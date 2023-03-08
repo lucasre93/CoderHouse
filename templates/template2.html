@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clase 2: Coderhouse</title>
+</head>
+<body>
+<p style="color: #015371"> Hola desde {{ entidad }}, estas en la cursada {{ cursada }}</p>
+La fecha en la que estamos corriendo el codigo es {{ fecha }} <br>
+La lista ingresada es {{ lista }}
+{% for numero in lista %}
+    <br>El numero es: {{numero}}
+{% endfor %}
+<br><br>
+<!--este es un commentario -->
+{% if cursada == "0648" %}
+    <h1>Estas en la cursada correcta </h1>
+{% else %}
+    <h1>Estas en la cursada incorrecta</h1>
+{% endif %}
+
+
+</body>
+</html>
